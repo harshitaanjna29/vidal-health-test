@@ -1,0 +1,6 @@
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/VidalHealthAppApplication.java
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/WebhookRunner.java
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/model/GenerateResponse.java
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/StatusController.java
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/repo/SolutionRepository.java
+/workspaces/vidal-health-test/src/main/java/com/example/vidal/model/SolutionEntity.java

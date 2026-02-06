@@ -1,0 +1,6 @@
+com/example/vidal/StatusController.class
+com/example/vidal/repo/SolutionRepository.class
+com/example/vidal/WebhookRunner.class
+com/example/vidal/model/SolutionEntity.class
+com/example/vidal/VidalHealthAppApplication.class
+com/example/vidal/model/GenerateResponse.class
