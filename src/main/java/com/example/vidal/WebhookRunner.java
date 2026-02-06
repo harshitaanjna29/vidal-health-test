@@ -45,17 +45,17 @@ public class WebhookRunner {
                 log.info("Received webhook: {}", gr.getWebhook());
                 log.info("Received accessToken: [REDACTED]");
 
-                // Decide SQL based on last two digits parity
+
                 String finalSql = chooseSql(regNo);
 
-                // store
+            
                 SolutionEntity s = new SolutionEntity();
                 s.setRegNo(regNo);
                 s.setSqlQuery(finalSql);
                 s.setSubmittedAt(Instant.now());
                 repo.save(s);
 
-                // send to webhook
+    
                 sendSolution(gr.getWebhook(), gr.getAccessToken(), finalSql);
             } else {
                 log.error("generateWebhook responded with status {}", resp.getStatusCode());
@@ -73,7 +73,7 @@ public class WebhookRunner {
                 } catch (Exception e) {
                         lastTwo = 0;
                 }
-                // Final SQL answer (works on PostgreSQL-compatible DBs)
+                
                 String finalSql =
                         "WITH high_paid AS (\n" +
                         "  SELECT DISTINCT emp_id\n" +
